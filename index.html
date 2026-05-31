@@ -1,117 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Maël Le DOaré</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - Maël Le Doare | BUT Informatique</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Maël Le Doare</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#home">Accueil</a></li>
-                     <li><a href="#about">A propos de moi</a></li>
-                    <li><a href="#portfolio">Mes compétences</a></li>
-                    <li><a href="#portfolio">Mes projets</a></li>
-                    <li><a href="#contact">Mes contacts</a></li>
-                </ul>
-            </nav>
+            <div class="nav-brand">
+                <h1>Maël Le Doare</h1>
+                <p class="subtitle">Étudiant BUT Informatique</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#timeline" class="nav-link">Chronologie</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <h2>Bienvenue sur mon Portfolio !</h2>
-                <p>Vous retrouverez ici mes aquis, projets et compétences</p>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">Bienvenue</h2>
+            <p class="hero-subtitle">Découvrez mes projets et mon parcours en première année de BUT Informatique</p>
+            <a href="#timeline" class="cta-button">Explorez mon portfolio</a>
+        </div>
+    </section>
 
-         <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2>A propos de moi</h2>
-                <p>je m’appelle Maël Le Doaré, j’ai 19 ans et je suis actuellement étudiant en première année au BUT informatique à Lannion.<br>J’ai pour objectif professionnel de trouver une alternance pour ma seconde et troisième année d’informatique dans le milieu du développement logiciel et de la réalisation d’application. Et une fois que mon cursus à l’IUT sera terminé, j’ai pour projet de continuer mes études en école d’ingénieur, ou, si j’en ai la possibilité, de poursuivre avec un CDI dans l’entreprise qui me prendrait en alternance. </p>
-            </div>
-        </section>
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Mon Parcours en Première Année</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Semestre 1 - Septembre à Janvier</h3>
+                        <p>Fondamentaux de la programmation, algorithmique et bases de données</p>
+                        <ul class="timeline-tags">
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Algorithme</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <h2>Mes compétences aquises en BUT Informatique</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="image-placeholder">
-                            <img src="https://via.placeholder.com/300x250?text=Project+1" alt="Project 1">
-                        </div>
-                        <h3>Compétence 1 :</h3>
-                        <p>blablabla</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Semestre 2 - Janvier à Juin</h3>
+                        <p>Développement web, interfaces graphiques et gestion de projets</p>
+                        <ul class="timeline-tags">
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>Gestion Projet</li>
+                        </ul>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="image-placeholder">
-                            <img src="https://via.placeholder.com/300x250?text=Project+2" alt="Project 2">
-                        </div>
-                        <h3>Compétence 2 :</h3>
-                        <p>blablabla</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="image-placeholder">
-                            <img src="https://via.placeholder.com/300x250?text=Project+3" alt="Project 3">
-                        </div>
-                        <h3>Compétence 3 :</h3>
-                        <p>blablabla</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="image-placeholder">
-                            <img src="https://via.placeholder.com/300x250?text=Project+3" alt="Project 3">
-                        </div>
-                        <h3>Compétence 4 :</h3>
-                        <p>blablabla</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="image-placeholder">
-                            <img src="https://via.placeholder.com/300x250?text=Project+3" alt="Project 3">
-                        </div>
-                        <h3>Compétence 5 :</h3>
-                        <p>blablabla</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="image-placeholder">
-                            <img src="https://via.placeholder.com/300x250?text=Project+3" alt="Project 3">
-                        </div>
-                        <h3>Compétence 6 :</h3>
-                        <p>blablabla</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Projets Réalisés</h3>
+                        <p>6 projets majeurs intégrant différentes technologies et compétences</p>
+                        <ul class="timeline-tags">
+                            <li>6 Projets</li>
+                            <li>Travail d'Équipe</li>
+                            <li>Créativité</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Mes contacts</h2>
-                <p>Voici l'ensemble de mes réseaux proffesionels et des moyens de me joindre</p>
-                <a href="mailto:your-mael.ledoare@etudiant.univ-rennes.fr" class="cta-button">Envoyer un email Email</a>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Mes 6 Projets Majeurs</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h3>Projet 1</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Découvrez mon premier projet majeur</p>
+                        <a href="project1.html" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <h3>Projet 2</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Explorez mon deuxième réalisation</p>
+                        <a href="project2.html" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <h3>Projet 3</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Consultez mon troisième projet</p>
+                        <a href="project3.html" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <h3>Projet 4</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Découvrez mon quatrième projet</p>
+                        <a href="project4.html" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <h3>Projet 5</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Explorez mon cinquième réalisation</p>
+                        <a href="project5.html" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <h3>Projet 6</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Consultez mon sixième projet</p>
+                        <a href="project6.html" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-content">
+                <p>Intéressé par mes projets? N'hésitez pas à me contacter!</p>
+                <div class="contact-links">
+                    <a href="mailto:your-email@example.com" class="contact-button">Email</a>
+                    <a href="https://github.com" class="contact-button github">GitHub</a>
+                    <a href="https://linkedin.com" class="contact-button linkedin">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Maël Le Doare. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="tel:0768374147">+33 07 68 37 41 47</a>
-            </div>
-        </div>
+        <p>&copy; 2026 Maël Le Doare | Portfolio - BUT Informatique</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

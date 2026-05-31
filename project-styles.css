@@ -1,0 +1,249 @@
+/* ==================== PROJECT HERO ==================== */
+.project-hero {
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* ==================== PROJECT MAIN ==================== */
+.project-main {
+    padding: 60px 0;
+}
+
+/* ==================== STAR METHOD ==================== */
+.star-method {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.star-section {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.star-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.star-header {
+    padding: 25px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.star-header h2 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.star-header.situation {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.star-header.task {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.star-header.action {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.star-header.result {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.star-content {
+    padding: 30px;
+}
+
+.star-content h3 {
+    color: #1a3a52;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.star-content p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.star-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.star-content li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #6b7280;
+}
+
+.star-content li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+.technologies {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.technologies h4 {
+    color: #1a3a52;
+    margin-bottom: 0.5rem;
+}
+
+.technologies ul {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.technologies li {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.result-item {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 4px solid #10b981;
+}
+
+.result-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #6366f1;
+    margin-bottom: 0.5rem;
+}
+
+.result-label {
+    display: block;
+    color: #6b7280;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ==================== PROJECT GALLERY ==================== */
+.project-gallery {
+    margin-bottom: 60px;
+}
+
+.project-gallery h2 {
+    color: #1a3a52;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    aspect-ratio: 4/3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* ==================== PROJECT LINKS ==================== */
+.project-links {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 2px solid #e5e7eb;
+}
+
+.project-links h2 {
+    color: #1a3a52;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.link-button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.link-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5);
+}
+
+.link-button.secondary {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.link-button.secondary:hover {
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.5);
+}
